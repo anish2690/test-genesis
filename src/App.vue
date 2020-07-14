@@ -1,12 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <RemoteView :fetch="fetch" />
     </div>
-    <router-view/>
   </div>
 </template>
+<script>
+import axios from 'axios';
+import { RemoteView } from '@fmfe/genesis-remote';
+
+export default {
+  name: 'Home',
+  components: {
+    RemoteView,
+  },
+  methods: {
+    async fetch() {
+      const res = await axios.get('../vue-genesis-template/dist/ssr-genesis/client/app.json');
+      if (res.status === 200) {
+        return res.data;
+      }
+      return null;
+    },
+  },
+};
+</script>
 
 <style>
 #app {
