@@ -1,0 +1,24 @@
+{
+    "id": "6b354339e62f25aa1569ec0cafc19805",
+    "name": "ssr-genesis",
+    "url": "/",
+    "html": "<div data-ssr-genesis-id=\"6b354339e62f25aa1569ec0cafc19805\" data-ssr-genesis-name=\"ssr-genesis\" data-ssr-genesis-base-url=\"%2Fssr-genesis%2F\"></div>",
+    "style": "<link rel=\"stylesheet\" href=\"/ssr-genesis/css/app.fc4f75c4.css\">",
+    "script": "<script src=\"/ssr-genesis/js/runtime.2ee51980.js\" defer></script><script src=\"/ssr-genesis/js/app.5f28bafd.js\" defer></script>",
+    "state": {},
+    "resource": [
+        {
+            "file": "/ssr-genesis/js/runtime.2ee51980.js",
+            "extension": "js"
+        },
+        {
+            "file": "/ssr-genesis/css/app.fc4f75c4.css",
+            "extension": "css"
+        },
+        {
+            "file": "/ssr-genesis/js/app.5f28bafd.js",
+            "extension": "js"
+        }
+    ],
+    "automount": true
+}

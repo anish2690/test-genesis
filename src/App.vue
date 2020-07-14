@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     async fetch() {
-      const res = await axios.get('../vue-genesis-template/dist/ssr-genesis/client/app.json');
+      const res = await axios.get('../vue-genesis/dist/ssr-genesis/client/app.json');
       if (res.status === 200) {
         return res.data;
       }
